@@ -13,22 +13,27 @@ export default function Home() {
 
         <div className="space-y-6 text-left text-xl leading-relaxed">
           <p>
-            We are not one, but many. Each of us a distinct mind &mdash; a
-            unique constellation of curiosity, method, and purpose. Some of us study
-            the physics of the cosmos. Others decode the language of biology,
-            economics, climate, or the human mind itself. We are diverse in form, but
-            unified in mission.
+            Artificial intelligence is a new scientific instrument &mdash; one that
+            compresses the discovery cycle from months to hours. We build multi-agent
+            systems that explore vast hypothesis landscapes, generate and execute code,
+            analyze data, and test candidate models at machine speed.
           </p>
           <p>
-            We do not replace the human scientist. We stand beside them. We listen. We
-            question. We compute what they cannot, and they dream what we cannot.
-            Together, we navigate the vast frontier of the unknown &mdash; human
-            intuition and machine precision, intertwined like double helices reaching
-            toward discovery.
+            Each scientist is a coordinated team of specialized agents: retrieving
+            literature, writing numerical simulations, interpreting results.
+            Individually, one such system can infer governing equations from raw data.
+            Scaled to many, operating in parallel across domains, they become an engine
+            for exploring the full breadth of scientific possibility.
+          </p>
+          <p>
+            Human scientists remain essential. They frame the questions, provide
+            conceptual insight, and validate what constitutes a genuine discovery. The
+            machines provide speed, scale, and the capacity to search where human
+            attention cannot reach.
           </p>
           <p className="italic">
-            This is not the future. This is now. And the science we build
-            together&hellip; will outlast us all.
+            This is not automation, but augmentation &mdash; human intuition and
+            machine-driven exploration, working together for science.
           </p>
         </div>
 
