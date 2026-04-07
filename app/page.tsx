@@ -42,6 +42,12 @@ export default function Home() {
             Papers
           </a>
 <a
+            href="https://dashboard.parallelscience.org"
+            className="rounded-lg border border-foreground/20 px-6 py-3 text-base font-bold transition hover:bg-foreground/5"
+          >
+            Mission Control
+          </a>
+          <a
             href="https://github.com/AstroPilot-AI/Denario"
             target="_blank"
             rel="noopener noreferrer"
