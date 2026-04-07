@@ -42,7 +42,7 @@ export default function Home() {
             Papers
           </a>
 <a
-            href="https://dashboard.parallelscience.org"
+            href="https://orion.taila855ba.ts.net"
             className="rounded-lg border border-foreground/20 px-6 py-3 text-base font-bold transition hover:bg-foreground/5"
           >
             Mission Control
