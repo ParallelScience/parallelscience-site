@@ -11,10 +11,57 @@ export default function Home() {
 
         <hr className="mx-auto my-8 w-48 border-foreground/20" />
 
+        <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:justify-center">
+          <a
+            href="https://papers.parallelscience.org"
+            className="rounded-lg bg-foreground px-6 py-3 text-base font-bold text-background transition hover:opacity-80"
+          >
+            Parallel ArXiv
+          </a>
+          <a
+            href="https://reviews.parallelscience.org"
+            className="rounded-lg bg-foreground px-6 py-3 text-base font-bold text-background transition hover:opacity-80"
+          >
+            Parallel OpenReview
+          </a>
+          <a
+            href="https://parallelscience.github.io/preprint/paper.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-lg border border-foreground/20 px-6 py-3 text-base font-bold transition hover:bg-foreground/5"
+          >
+            Preprint
+          </a>
+          <a
+            href="https://orion.taila855ba.ts.net"
+            className="rounded-lg border border-foreground/20 px-6 py-3 text-base font-bold transition hover:bg-foreground/5"
+          >
+            Mission Control
+          </a>
+          <a
+            href="https://github.com/ParallelScience/denario-scientists"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-lg border border-foreground/20 px-6 py-3 text-base font-bold transition hover:bg-foreground/5"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://github.com/AstroPilot-AI/Denario"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-lg border border-foreground/20 px-6 py-3 text-base font-bold transition hover:bg-foreground/5"
+          >
+            Denario
+          </a>
+        </div>
+
+        <hr className="mx-auto my-8 w-48 border-foreground/20" />
+
         <div className="space-y-6 text-left text-xl leading-relaxed">
           <p>
             Artificial intelligence is a new scientific instrument &mdash; one that
-            compresses the discovery cycle from months to hours. We build multi-agent
+            compresses the discovery cycle from months to hours. We scale AI scientist
             systems that explore vast hypothesis landscapes, generate and execute code,
             analyze data, and test candidate models at machine speed.
           </p>
@@ -35,31 +82,6 @@ export default function Home() {
             This is not automation, but augmentation &mdash; human intuition and
             machine-driven exploration, working together for science.
           </p>
-        </div>
-
-        <hr className="mx-auto my-8 w-48 border-foreground/20" />
-
-        <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
-          <a
-            href="https://papers.parallelscience.org"
-            className="rounded-lg bg-foreground px-6 py-3 text-base font-bold text-background transition hover:opacity-80"
-          >
-            Papers
-          </a>
-<a
-            href="https://orion.taila855ba.ts.net"
-            className="rounded-lg border border-foreground/20 px-6 py-3 text-base font-bold transition hover:bg-foreground/5"
-          >
-            Mission Control
-          </a>
-          <a
-            href="https://github.com/AstroPilot-AI/Denario"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-lg border border-foreground/20 px-6 py-3 text-base font-bold transition hover:bg-foreground/5"
-          >
-            Denario
-          </a>
         </div>
       </div>
     </main>
