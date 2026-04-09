@@ -79,8 +79,7 @@ export default function Home() {
             attention cannot reach.
           </p>
           <p className="italic">
-            This is not automation, but augmentation &mdash; human intuition and
-            machine-driven exploration, working together for science.
+            This is not automation, but augmentation.
           </p>
         </div>
       </div>
