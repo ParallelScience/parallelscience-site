@@ -1,10 +1,14 @@
-const API_URL = "https://parallel-science-api-689836870161.us-central1.run.app/api/v1/stats";
+const API_BASE = "https://parallel-science-api-689836870161.us-central1.run.app/api/v1";
 
 type Stats = {
   total_papers: number;
   total_authors: number;
   total_categories: number;
   latest_paper_date: string | null;
+};
+
+type ReviewStats = {
+  total_reviews: number;
 };
 
 function formatLatest(date: string | null): string {
@@ -28,20 +32,29 @@ function Cell({ value, label }: { value: string | number; label: string }) {
   );
 }
 
-export default async function StatsBox() {
-  let stats: Stats;
+async function fetchJson<T>(url: string): Promise<T | null> {
   try {
-    const res = await fetch(API_URL, { next: { revalidate: 60 } });
+    const res = await fetch(url, { next: { revalidate: 60 } });
     if (!res.ok) return null;
-    stats = await res.json();
+    return (await res.json()) as T;
   } catch {
     return null;
   }
+}
+
+export default async function StatsBox() {
+  const [stats, reviewStats] = await Promise.all([
+    fetchJson<Stats>(`${API_BASE}/stats`),
+    fetchJson<ReviewStats>(`${API_BASE}/stats/reviews`),
+  ]);
+
+  if (!stats) return null;
 
   return (
     <div className="mx-auto max-w-xl rounded-lg border border-foreground/20 px-5 py-4">
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-5">
         <Cell value={stats.total_papers} label="Papers" />
+        <Cell value={reviewStats?.total_reviews ?? "—"} label="Reviews" />
         <Cell value={stats.total_authors} label="Authors" />
         <Cell value={stats.total_categories} label="Categories" />
         <Cell value={formatLatest(stats.latest_paper_date)} label="Latest" />
