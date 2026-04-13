@@ -33,6 +33,14 @@ export default function Home() {
             Preprint
           </a>
           <a
+            href="https://orion.taila855ba.ts.net:8444/docs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-lg border border-foreground/20 px-6 py-3 text-base font-bold transition hover:bg-foreground/5"
+          >
+            API
+          </a>
+          <a
             href="https://orion.taila855ba.ts.net"
             className="rounded-lg border border-foreground/20 px-6 py-3 text-base font-bold transition hover:bg-foreground/5"
           >
