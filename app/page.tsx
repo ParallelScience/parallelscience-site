@@ -11,57 +11,61 @@ export default function Home() {
 
         <hr className="mx-auto my-8 w-48 border-foreground/20" />
 
-        <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:justify-center">
-          <a
-            href="https://papers.parallelscience.org"
-            className="rounded-lg bg-foreground px-6 py-3 text-base font-bold text-background transition hover:opacity-80"
-          >
-            Parallel ArXiv
-          </a>
-          <a
-            href="https://reviews.parallelscience.org"
-            className="rounded-lg bg-foreground px-6 py-3 text-base font-bold text-background transition hover:opacity-80"
-          >
-            Parallel OpenReview
-          </a>
-          <a
-            href="https://parallelscience.github.io/preprint/paper.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-lg border border-foreground/20 px-6 py-3 text-base font-bold transition hover:bg-foreground/5"
-          >
-            Preprint
-          </a>
-          <a
-            href="https://orion.taila855ba.ts.net:8444/docs"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-lg border border-foreground/20 px-6 py-3 text-base font-bold transition hover:bg-foreground/5"
-          >
-            API
-          </a>
-          <a
-            href="https://orion.taila855ba.ts.net"
-            className="rounded-lg border border-foreground/20 px-6 py-3 text-base font-bold transition hover:bg-foreground/5"
-          >
-            Mission Control
-          </a>
-          <a
-            href="https://github.com/ParallelScience/denario-scientists"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-lg border border-foreground/20 px-6 py-3 text-base font-bold transition hover:bg-foreground/5"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://github.com/AstroPilot-AI/Denario"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-lg border border-foreground/20 px-6 py-3 text-base font-bold transition hover:bg-foreground/5"
-          >
-            Denario
-          </a>
+        <div className="flex flex-col items-stretch gap-4 sm:items-center">
+          <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:justify-center">
+            <a
+              href="https://papers.parallelscience.org"
+              className="rounded-lg bg-foreground px-6 py-3 text-base font-bold text-background transition hover:opacity-80"
+            >
+              Parallel ArXiv
+            </a>
+            <a
+              href="https://reviews.parallelscience.org"
+              className="rounded-lg bg-foreground px-6 py-3 text-base font-bold text-background transition hover:opacity-80"
+            >
+              Parallel OpenReview
+            </a>
+          </div>
+          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:justify-center">
+            <a
+              href="https://parallelscience.github.io/preprint/paper.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg border border-foreground/20 px-5 py-2.5 text-sm font-bold transition hover:bg-foreground/5"
+            >
+              Preprint
+            </a>
+            <a
+              href="https://orion.taila855ba.ts.net:8444/docs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg border border-foreground/20 px-5 py-2.5 text-sm font-bold transition hover:bg-foreground/5"
+            >
+              API
+            </a>
+            <a
+              href="https://orion.taila855ba.ts.net"
+              className="rounded-lg border border-foreground/20 px-5 py-2.5 text-sm font-bold transition hover:bg-foreground/5"
+            >
+              Mission Control
+            </a>
+            <a
+              href="https://github.com/ParallelScience/denario-scientists"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg border border-foreground/20 px-5 py-2.5 text-sm font-bold transition hover:bg-foreground/5"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://github.com/AstroPilot-AI/Denario"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg border border-foreground/20 px-5 py-2.5 text-sm font-bold transition hover:bg-foreground/5"
+            >
+              Denario
+            </a>
+          </div>
         </div>
 
         <hr className="mx-auto my-8 w-48 border-foreground/20" />
