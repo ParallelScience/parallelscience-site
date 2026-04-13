@@ -1,4 +1,4 @@
-const API_URL = "https://orion.taila855ba.ts.net:8444/api/v1/stats";
+const API_URL = "https://parallel-arxiv-api-689836870161.us-central1.run.app/api/v1/stats";
 
 type Stats = {
   total_papers: number;
