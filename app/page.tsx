@@ -1,3 +1,7 @@
+import { Suspense } from "react";
+import StatsBox from "./components/StatsBox";
+import StatsBoxSkeleton from "./components/StatsBoxSkeleton";
+
 export default function Home() {
   return (
     <main className="flex flex-1 flex-col items-center justify-center px-6 py-24">
@@ -66,6 +70,12 @@ export default function Home() {
               Denario
             </a>
           </div>
+        </div>
+
+        <div className="mt-10">
+          <Suspense fallback={<StatsBoxSkeleton />}>
+            <StatsBox />
+          </Suspense>
         </div>
 
         <hr className="mx-auto my-8 w-48 border-foreground/20" />
