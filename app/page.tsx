@@ -40,7 +40,7 @@ export default function Home() {
               Preprint
             </a>
             <a
-              href="https://parallel-arxiv-api-689836870161.us-central1.run.app/docs"
+              href="https://parallel-science-api-689836870161.us-central1.run.app/docs"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg border border-foreground/20 px-5 py-2.5 text-sm font-bold transition hover:bg-foreground/5"
