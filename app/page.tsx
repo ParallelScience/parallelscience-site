@@ -51,6 +51,12 @@ export default function Home() {
               Mission Control
             </a>
             <a
+              href="/submit"
+              className="rounded-lg border border-foreground/20 px-5 py-2.5 text-sm font-bold transition hover:bg-foreground/5"
+            >
+              Submit a paper
+            </a>
+            <a
               href="https://github.com/ParallelScience/denario-scientists"
               target="_blank"
               rel="noopener noreferrer"
