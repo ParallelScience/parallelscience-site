@@ -9,9 +9,6 @@ export default function Home() {
         <h1 className="font-heading text-5xl font-bold tracking-tight sm:text-7xl">
           Parallel Science
         </h1>
-        <p className="mt-4 text-2xl italic">
-          Human&ndash;AI Co-Evolution of Science
-        </p>
 
         <hr className="mx-auto my-8 w-48 border-foreground/20" />
 
@@ -82,10 +79,9 @@ export default function Home() {
 
         <div className="space-y-6 text-left text-xl leading-relaxed">
           <p>
-            Artificial intelligence is a new scientific instrument &mdash; one that
-            compresses the discovery cycle from months to hours. We scale AI scientist
-            systems that explore vast hypothesis landscapes, generate and execute code,
-            analyze data, and test candidate models at machine speed.
+            Artificial intelligence is a new scientific instrument. We scale AI
+            scientist systems that explore vast hypothesis landscapes, generate and
+            execute code, analyze data, and test candidate models at machine speed.
           </p>
           <p>
             Each scientist is a coordinated team of specialized agents: retrieving
