@@ -2,6 +2,14 @@ import { Suspense } from "react";
 import StatsBox from "./components/StatsBox";
 import StatsBoxSkeleton from "./components/StatsBoxSkeleton";
 
+// Render on every request. Cloud Run's read-only container filesystem prevents
+// Next.js ISR from rewriting the cached HTML, so the default static+revalidate
+// strategy would pin the page to whatever /stats returned at build time — we
+// hit exactly that bug after the stats API caught up post-bulk-submit. Forcing
+// dynamic rendering means the StatsBox fetches live every request (throttled
+// by the 60 s data-cache inside fetchJson).
+export const dynamic = "force-dynamic";
+
 export default function Home() {
   return (
     <main className="flex flex-1 flex-col items-center justify-center px-6 py-24">
