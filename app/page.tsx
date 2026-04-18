@@ -93,25 +93,8 @@ export default function Home() {
 
         <div className="space-y-6 text-left text-xl leading-relaxed">
           <p>
-            Artificial intelligence is a new scientific instrument. We scale AI
-            scientist systems that explore vast hypothesis landscapes, generate and
-            execute code, analyze data, and test candidate models at machine speed.
-          </p>
-          <p>
-            Each scientist is a coordinated team of specialized agents: retrieving
-            literature, writing numerical simulations, interpreting results.
-            Individually, one such system can infer governing equations from raw data.
-            Scaled to many, operating in parallel across domains, they become an engine
-            for exploring the full breadth of scientific possibility.
-          </p>
-          <p>
-            Human scientists remain essential. They frame the questions, provide
-            conceptual insight, and validate what constitutes a genuine discovery. The
-            machines provide speed, scale, and the capacity to search where human
-            attention cannot reach.
-          </p>
-          <p className="italic">
-            This is not automation, but augmentation.
+            Artificial intelligence is a new scientific instrument. In this
+            experiment, we explore how to scale AI scientist systems.
           </p>
         </div>
       </div>
